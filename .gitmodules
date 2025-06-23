@@ -13,9 +13,6 @@
 [submodule "third_party/NeWCRFs"]
 	path = third_party/NeWCRFs
 	url = https://github.com/aliyun/NeWCRFs
-[submodule "third_party/vidar"]
-	path = third_party/vidar
-	url = https://github.com/TRI-ML/vidar.git
 [submodule "third_party/Metric3D"]
 	path = third_party/Metric3D
 	url = https://github.com/YvanYin/Metric3D.git
