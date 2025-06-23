@@ -31,11 +31,13 @@ pip install -r requirements.txt
 
 # Install cupy according to your CUDA version, for CUDA 12.x:
 pip install cupy-cuda12x
+pip install timm==0.6.7  # ZoeDepth requirement
 
 # Install LightedDepth
 cd third_party/LightedDepth/GPUEPMatrixEstimation/
 python -c "import torch; print(f'PyTorch CUDA version: {torch.version.cuda}')" && nvcc --version | grep 'Cuda compilation tools' # ensure the version of Pytorch and system nccc are the same
 python setup.py install
+
 
 # Download pretrained depth and correspondence checkpoints
 mkdir checkpoint && cd checkpoint

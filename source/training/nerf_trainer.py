@@ -86,21 +86,7 @@ class NerfTrainerPerScene(base.PerSceneTrainer):
             from zoedepth.utils.config import get_config
             conf = get_config("zoedepth_nk", "infer")
             conf['pretrained_resource'] = "local::" + os.path.join(proj_root, 'checkpoint', 'ZoeD_M12_NK.pt')
-            success = False
-            wait=20
-            max_trial = 30
-            trial = 0
-            while not success:
-                try:
-                    self.monodepth_net = build_model(conf).eval().to(self.device)
-                    success = True
-                except:
-                    time.sleep(wait)
-                    if trial > max_trial:
-                        print("Fail too many attempts")
-                        raise NotImplementedError()
-                    trial += 1
-                    continue
+            self.monodepth_net = build_model(conf).eval().to(self.device)
         elif opt.mondepth_backbone == 'ZeroDepth':
             vidar_root = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(inspect.getfile(inspect.currentframe())))))
             vidar_root = os.path.join(vidar_root, 'third_party', 'vidar')
