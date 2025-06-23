@@ -4,7 +4,6 @@ imageio
 h5py
 jpeg4py 
 opencv-python
-numpy
 configargparse
 PyYAML
 scipy
@@ -12,7 +11,6 @@ scikit-image
 Pillow
 tqdm
 lpips
-matplotlib
 pandas 
 gdown 
 timm
@@ -22,4 +20,6 @@ tensorboard
 kornia
 coloredlogs
 natsort
+numpy==1.26.4 # numpy 2xx import error
+matplotlib==3.5.3 # matoplotlib tostring_rgb error
 pycolmap>=0.3.0
