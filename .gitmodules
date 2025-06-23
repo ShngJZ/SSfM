@@ -1,0 +1,21 @@
+[submodule "third_party/DenseMatching"]
+	path = third_party/DenseMatching
+	url = https://github.com/PruneTruong/DenseMatching.git
+[submodule "third_party/Hierarchical-Localization"]
+	path = third_party/Hierarchical-Localization
+	url = https://github.com/cvg/Hierarchical-Localization.git
+[submodule "third_party/ZoeDepth"]
+	path = third_party/ZoeDepth
+	url = https://github.com/isl-org/ZoeDepth.git
+[submodule "third_party/roma"]
+	path = third_party/roma
+	url = https://github.com/parskatt/roma
+[submodule "third_party/NeWCRFs"]
+	path = third_party/NeWCRFs
+	url = https://github.com/aliyun/NeWCRFs
+[submodule "third_party/vidar"]
+	path = third_party/vidar
+	url = https://github.com/TRI-ML/vidar.git
+[submodule "third_party/Metric3D"]
+	path = third_party/Metric3D
+	url = https://github.com/YvanYin/Metric3D.git
