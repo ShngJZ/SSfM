@@ -211,11 +211,11 @@ def main():
     parser.add_argument('--train_sub', type=int, default=5,
                         help='train subset: how many input views to consider?')
     parser.add_argument('--pose_eval', type=str, help='Pose To Eval', default="pose_optimized")
-    parser.add_argument('--split', type=str, default="scannet")
+    parser.add_argument('--dataset', type=str, default="scannet")
     args = parser.parse_args()
 
     # Load dataset split
-    split_export_path = os.path.join(proj_root, 'split', 'scannet', '{}.txt'.format(args.split))
+    split_export_path = os.path.join(proj_root, 'split', 'scannet', '{}.txt'.format(args.dataset))
     with open(split_export_path) as file:
         entries = file.readlines()
 

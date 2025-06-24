@@ -20,6 +20,7 @@ tensorboard
 kornia
 coloredlogs
 natsort
+tabulate
 numpy==1.26.4 # numpy 2xx import error
 matplotlib==3.5.3 # matoplotlib tostring_rgb error
 pycolmap>=0.3.0
