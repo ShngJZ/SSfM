@@ -123,10 +123,10 @@ python evaluation/eval_pose_by_pose.py --train_module joint_pose_nerf_training/s
 
 If you find this work useful in your research, please consider citing:
 ```bibtex
-@inproceedings{zhu2024rsfm,
-  title={Revisit Self-supervised Depth Estimation with Local Structure-from-Motion},
-  author={Zhu, Shengjie and Liu, Xiaoming},
-  booktitle={ECCV},
-  year={2024}
+@article{zhu2024revisit,
+    title={Revisit Self-supervised Depth Estimation with Local Structure-from-Motion},
+    author={Zhu, Shengjie and Liu, Xiaoming},
+    journal={ECCV},
+    year={2024}
 }
 ```
