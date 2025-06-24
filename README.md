@@ -1,4 +1,4 @@
-# RSfM: Revisit Self-supervised Depth Estimation with Local Structure-from-Motion
+# Revisit Self-supervised Depth Estimation with Local Structure-from-Motion
 
 This repository contains the official implementation of the paper:   
 **Revisit Self-supervised Depth Estimation with Local Structure-from-Motion**  
@@ -15,12 +15,12 @@ This work studies a multiview-RANSAC scheme to find multi-view poses that maximi
 ### Environment Setup
 
 ```bash
-git clone https://github.com/ShngJZ/RSfM
-cd RSfM
+git clone https://github.com/ShngJZ/SSfM
+cd SSfM
 git submodule update --init --recursive --remote
 
-conda create -n rsfm python=3.10
-conda activate rsfm
+conda create -n ssfm python=3.10
+conda activate ssfm
 
 # Install PyTorch (https://pytorch.org/)
 # Check and select the version compatible with your CUDA (check your CUDA version with nvcc --version)
@@ -70,7 +70,7 @@ Please ensure you agree to all licenses of the dataset before downloading.
 
 ```bash
 # Download datasets
-mkdir RSfM-Datasets && cd RSfM-Datasets
+mkdir SSfM-Datasets && cd SSfM-Datasets
 
 # ScanNet dataset, make sure the git lfs installed
 git clone https://huggingface.co/datasets/shngjz/f2509922c5dc01d3c0f9a365327c1de3
@@ -92,7 +92,7 @@ For multi-GPU training (example with 8 GPUs), run one command per Tmux window:
 
 ```bash
 # Replace /home/ubuntu/disk1/RSfM-Datasets/ScanNet with your dataset path
-CUDA_VISIBLE_DEVICES=0 python local_ba_scale_up/optimize_pose_depth.py --train_module joint_pose_nerf_training/scannet_depth_exp --train_name zoedepth_pdcnet --train_sub 5 --data_root /home/ubuntu/disk1/RSfM-Datasets/ScanNet --dataset scannet
+CUDA_VISIBLE_DEVICES=0 python local_ba_scale_up/optimize_pose_depth.py --train_module joint_pose_nerf_training/scannet_depth_exp --train_name zoedepth_pdcnet --train_sub 5 --data_root /home/ubuntu/disk1/SSfM-Datasets/ScanNet --dataset scannet
 # Repeat for CUDA_VISIBLE_DEVICES=1 through 7 on your tmux window
 ```
 
