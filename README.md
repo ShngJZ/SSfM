@@ -2,7 +2,7 @@
 
 This repository contains the official implementation of the paper:   
 **Revisit Self-supervised Depth Estimation with Local Structure-from-Motion**  
-Authors: [Shengjie Zhu](https://shngjz.github.io/) and [Xiaoming Liu](https://cvlab.cse.msu.edu/)
+Authors: [Shengjie Zhu](https://shngjz.github.io/) and [Xiaoming Liu](https://cvlab.cse.msu.edu/)<br>
 *ECCV'24* [📄 [arXiv]](https://arxiv.org/abs/2407.19166), [🌐 [webpage]](https://shngjz.github.io/SSfM.github.io/)
 
 
